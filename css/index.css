@@ -13,21 +13,40 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
+::selection {
+  background: #B5FFFC;
+}
+::-moz-selection {
+  background: #B5FFFC;
+}
+
 .intro a {
-  border-bottom: 2px #eb808e dashed;
-  padding-bottom: 2.5px;
   color: #636363;
-  -o-transition: .4s ease-in-out;
-  -ms-transition: .4s ease-in-out;
-  -moz-tranisiton: .4s ease-in-out;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  border-bottom: 2px #636363 solid;
+  padding-bottom: 2.5px;
 }
 
 .intro a:hover {
-  color: #eb808e;
-  border-bottom: 2px #636363 dashed;
+  border-bottom: 2px #8BC6EC solid;
+  padding-bottom: 2.5px;
+  color: #636363;
+}
 
+.action {
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  padding: 5px 13px 7px 13px;
+  border: 2px solid #333;
+  color: #636363;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.action:hover {
+  /*background-color: #8BC6EC;*/
+  border: 2px #8BC6EC solid;
+  /*color: #FFF;*/
 }
 
 .bold {
@@ -47,7 +66,7 @@ a, a:visited, a:active {
 }
 
 .graident {
-  background: linear-gradient(300deg, #6190E8, #DDA0DD, #FA8072);
+  background: linear-gradient(300deg, #8BC6EC, #9599E2);
 	background-size: 800% 800%;
 	-webkit-animation: GradientMotion 6s ease infinite;
 	-moz-animation: GradientMotion 6s ease infinite;
@@ -93,6 +112,10 @@ a, a:visited, a:active {
   transform: translateY(8px);
 }
 
+.fa-github {
+  color: #333;
+}
+
 .fa-twitter {
   color: #1EA1F2;
 }
@@ -103,19 +126,6 @@ a, a:visited, a:active {
 
 .fa-instagram {
   color: #c13584;
-}
-
-.action {
-  color: #636363;
-  font-weight: 400;
-  display: block;
-  position: absolute;
-  left: 0;
-  margin-top: 20px;
-  font-size: 20px;
-  padding: 10px 15px 10px 15px;
-  background-color: rgba(255,255,255,0.6);
-  border: 3px solid #86BCFC;
 }
 
 /* Graident */
