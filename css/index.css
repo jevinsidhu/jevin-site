@@ -92,12 +92,67 @@ h3 {
   font-size: 26px;
 }
 
+#footer {
+  margin-left: 10%;
+}
+
+#footer h2 {
+  display: inline-block;
+  color: #000;
+  font-style: italic;
+  font-weight: 900;
+}
+
+#footer h5 {
+  font-family: "Lato";
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  margin-left: 100px;
+  margin-right: 80px;
+  font-size: 18px;
+}
+
+#footer h6 {
+  font-family: "Lato";
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+#contact-me {
+  margin-left: 10%;
+  width: 350px;
+  margin-bottom: 100px;
+}
+
+#contact-me h2 {
+  font-weight: 900;
+  font-style: italic;
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 80px;
+}
+
+.email-me h3 {
+  font-size: 13px;
+}
+
+.email-me h4 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #3F3F3F;
+}
+
 #projects {
   margin-top: 250px;
+  margin-bottom: 150px;
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto;
-  grid-template-rows: repeat(5, 250px);
+  grid-template-rows: repeat(4, 250px);
   grid-row-gap: 100px;
 }
 
@@ -332,7 +387,167 @@ h3 {
 }
 
 /* Media Queries */
+ @media only screen and (max-width: 1050px)  {
+  #projects {
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 250px);
+    grid-row-gap: 100px;
+  }
+
+  .project-img {
+    margin: 0;
+    padding: 0;
+    height: 250px;
+  }
+
+  #hands-on-wrapper {
+    display: grid;
+    border: 1px solid #E1E1E1;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #freud-wrapper {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #unbeatn-path-wrapper {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #stewie-wrapper {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .img-wrapper h2 {
+    font-size: 20px;
+    width: 120px;
+  }
+
+  #freud-wrapper h2 {
+    margin-top: -25px;
+    margin-left: 170px;
+  }
+
+  #hands-on-wrapper h2 {
+    margin-top: -25px;
+    margin-left: -40px;
+  }
+
+  #unbeatn-path-wrapper h2 {
+    width: 170px;
+    margin-top: -20px;
+    margin-left: -40px;
+  }
+
+  #stewie-wrapper h2 {
+    margin-top: -20px;
+    margin-left: 150px;
+  }
+
+  #footer h2 {
+    display: block;
+    color: #000;
+    font-style: italic;
+    font-weight: 900;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
+  #footer h5 {
+    font-family: "Lato";
+    display: block;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+
+  #footer h6 {
+    margin-top: 20px;
+    font-family: "Lato";
+    display: inline-block;
+    color: #000;
+    font-weight: 700;
+    margin-left: 0;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
+}
+
 @media screen and (max-width: 540px) {
+  #projects {
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 145px);
+    grid-row-gap: 100px;
+  }
+
+  .project-img {
+    margin: 0;
+    padding: 0;
+    height: 145px;
+  }
+
+  #hands-on-wrapper {
+    display: grid;
+    border: 1px solid #E1E1E1;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #freud-wrapper {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #unbeatn-path-wrapper {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #stewie-wrapper {
+    display: grid;
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .img-wrapper h2 {
+    font-size: 18px;
+  }
+
+  #freud-wrapper h2 {
+    margin-top: -25px;
+    margin-left: -201px;
+  }
+
+  #hands-on-wrapper h2 {
+    margin-top: -25px;
+    margin-left: 215px;
+  }
+
+  #unbeatn-path-wrapper h2 {
+    width: 150px;
+    margin-top: -20px;
+    margin-left: 185px;
+  }
+
+  #stewie-wrapper h2 {
+    margin-top: -20px;
+    margin-left: -201px;
+  }
+
 	.desc {
 		width: calc(100% - 30px);
 	}
@@ -341,6 +556,22 @@ h3 {
     width: calc(100% - 30px);
   }
 
+  #name-box {
+    width: 178px;
+    font-size: 13px;
+  }
+
+  #footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+  }
+
+  #contact-me {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen
