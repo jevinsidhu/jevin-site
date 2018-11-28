@@ -52,10 +52,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .desc {
-  margin-top: 12em;
   width: 410px;
 }
 
@@ -123,6 +123,7 @@ h3 {
 }
 
 #contact-me {
+  height: 50vh;
   margin-left: 10%;
   width: 350px;
   margin-bottom: 100px;
@@ -147,8 +148,8 @@ h3 {
 }
 
 #projects {
-  margin-top: 250px;
-  margin-bottom: 150px;
+  margin-top: 50px;
+  margin-bottom: 30vh;
   display: grid;
   justify-content: center;
   grid-template-columns: auto auto;
