@@ -56,7 +56,24 @@ h3 {
 }
 
 .desc {
-  width: 410px;
+  display: block;
+  width: 550px;
+}
+
+.arrow {
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  top: 87vh;
+  left: 0;
+  right: 0;
+}
+
+.arrow a {
+  color: #000;
 }
 
 .bold {
@@ -88,8 +105,8 @@ h3 {
 
 #icons {
   margin-top: 18px;
-  margin-left: 25px;
-  font-size: 26px;
+  margin-left: 28px;
+  font-size: 32px;
 }
 
 #footer {
@@ -148,7 +165,7 @@ h3 {
 }
 
 #projects {
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 30vh;
   display: grid;
   justify-content: center;
@@ -276,7 +293,7 @@ h3 {
 
 .icon {
   color: #636363;
-  margin-right: 10px;
+  margin-right: 18px;
 
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: translateY(8px);
@@ -303,15 +320,20 @@ h3 {
 #name-box {
   display: inline-block;
   font-family: "Lato";
-  font-size: 17px;
+  font-size: 20px;
   font-style: italic;
   color: #FFF;
   padding: 15px 0px 15px 10px;
-  width: 230px;
+  width: 270px;
 }
 
 .wave {
   margin-left: 10px;
+}
+
+.company {
+  text-decoration: underline;
+  color: #000;
 }
 
 .intro {
@@ -372,7 +394,7 @@ h3 {
 /* about.html */
 #body-about .desc {
   display: flex;
-  width: 560px;
+  width: 60px;
   margin: 75px auto 0 auto;
 }
 
@@ -485,7 +507,17 @@ h3 {
 
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 650px) {
+  #icons {
+    margin-top: 13px;
+    font-size: 24px;
+    margin-left: 18px;
+  }
+
+  .icon {
+    margin-right: 15px;
+  }
+
   #projects {
     justify-content: center;
     grid-template-columns: auto;
