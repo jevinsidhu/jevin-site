@@ -189,6 +189,23 @@ h3 {
     grid-template-columns: 530px;
     justify-content: center;
   }
+
+  #unbeatn-path-wrapper {
+    grid-column: 1/2;
+  }
+
+  #stewie-wrapper {
+    grid-column: 2/3;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #stewie-wrapper {
+    grid-column: auto;
+  }
+  #stewie-wrapper {
+    grid-column: auto;
+  }
 }
 
 .work-wrapper {
@@ -752,6 +769,13 @@ h3 {
     width: 350px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #icons {
+    font-size: 23px;
+    margin-left: 15px;
   }
 }
 
