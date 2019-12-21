@@ -110,6 +110,8 @@ h3 {
 
 #header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #links {
@@ -121,8 +123,6 @@ h3 {
 }
 
 #icons {
-  margin-top: 18px;
-  margin-left: 28px;
   font-size: 32px;
 }
 
@@ -721,7 +721,6 @@ h3 {
   }
 
   #footer h6 {
-    margin-top: 10px;
     font-family: "Lato";
     display: inline-block;
     color: #0e1111;
@@ -825,17 +824,19 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  #footer h6 {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   #icons {
-    margin-top: 13px;
     font-size: 24px;
-    margin-left: 18px;
   }
 
   .icon {
-    margin-right: 15px;
+    margin-right: 9px;
   }
 
   .img-wrapper h2 {
@@ -865,11 +866,10 @@ h3 {
 @media screen and (max-width: 450px) {
   #icons {
     font-size: 23px;
-    margin-left: 15px;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 320px) {
   .desc {
     width: calc(100% - 40px);
   }
@@ -884,7 +884,6 @@ h3 {
   }
 
   #icons {
-    margin: 0;
     text-align: right;
   }
 
@@ -920,7 +919,8 @@ h3 {
 
   .work-wrapper {
     width: 275px;
-    height: 300px;
+    height: auto;
+    padding: 20px 20px;
   }
 
   .work-wrapper p {
