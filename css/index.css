@@ -321,6 +321,40 @@ h3 {
   width: 30px;
 }
 
+.autobidder {
+  background-color: #3775d2;
+  transition: all 0.5s ease;
+}
+
+.autobidder:hover {
+  background-color: #5682c4;
+}
+
+.autobidder h4 {
+  color: #e3e7ee;
+}
+
+.autobidder p {
+  color: #82a2d2;
+}
+
+.powerhub {
+  background-color: #28b171;
+  transition: all 0.5s ease;
+}
+
+.powerhub:hover {
+  background-color: rgb(72, 199, 140);
+}
+
+.powerhub h4 {
+  color: #ecf5f1;
+}
+
+.powerhub p {
+  color: #d7e9e1;
+}
+
 .hxouse-site {
   background-color: #000;
   transition: all 0.5s ease;
