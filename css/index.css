@@ -73,7 +73,7 @@ h3 {
 
 .desc {
   display: block;
-  width: 550px;
+  width: 575px;
 }
 
 .arrow {
@@ -104,14 +104,25 @@ h3 {
 .details {
   color: #3f3f3f;
   font-family: "Charter";
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 5px;
 }
 
 #header {
+  font-family: "Inter", sans-serif;
+  color: black;
+  margin: 0 0 50px 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+#header h1 {
+  font-size: 24px;
+}
+
+#header h1,
+p {
+  font-weight: 400;
 }
 
 #links {
@@ -123,7 +134,24 @@ h3 {
 }
 
 #icons {
-  font-size: 32px;
+  font-size: 18px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-auto-columns: max-content;
+  grid-gap: 0 15px;
+  margin: 5px 0 0 0;
+}
+
+#icons p {
+  font-size: 12px;
+  display: inline;
+  width: max-content;
+  margin: 0;
+}
+
+#icons a {
+  width: max-content;
 }
 
 #footer-container {
@@ -250,7 +278,7 @@ h3 {
 }
 
 .work-wrapper h4 {
-  font-size: 14px;
+  font-size: 12px;
   color: #a2a2a2;
   font-weight: 700;
   margin-top: 0;
@@ -578,7 +606,7 @@ h3 {
 }
 
 .other-project-header {
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
   color: black;
   text-transform: lowercase;
@@ -594,23 +622,23 @@ h3 {
 
 .icon {
   color: #636363;
-  margin-right: 18px;
 
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: translateY(-4px);
-  -o-transition-duration: translateY(-4px);
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 
   -webkit-transition-property: transform;
-  -moz-transition-property: translateY(-4px);
-  -o-transition-property: translateY(-4px);
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
   transition-property: transform;
 
   -webkit-transition-timing-function: ease-out;
-  -moz-transition-timing-function: translateY(-4px);
-  -o-transition-timing-function: translateY(-4px);
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .icon:hover,
 .icon:focus,
 .icon:active {
@@ -621,13 +649,8 @@ h3 {
 }
 
 #name-box {
-  display: inline-block;
-  font-family: "Lato";
-  font-size: 20px;
-  font-style: italic;
-  color: #fff;
-  padding: 15px 0px 15px 10px;
-  width: 270px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
 }
 
 .wave {
@@ -643,9 +666,13 @@ h3 {
   color: #3f3f3f;
   font-family: "Charter", serif;
   letter-spacing: 0.01rem;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
-  margin-top: 15px;
+  margin: 10px 0;
+}
+
+#main {
+  font-size: 18px;
 }
 
 .underline {
@@ -865,8 +892,9 @@ h3 {
 }
 
 @media screen and (max-width: 650px) {
-  #icons {
-    font-size: 24px;
+  #wrapper {
+    padding: 50px 0;
+    height: auto;
   }
 
   .icon {
@@ -886,7 +914,6 @@ h3 {
   }
 
   #name-box {
-    width: 178px;
     font-size: 13px;
   }
 
@@ -995,6 +1022,6 @@ h3 {
   }
 
   #footer h6 {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
