@@ -1,6 +1,12 @@
 @font-face {
-  font-family: "Charter";
-  src: url("fonts/charter.tff");
+  font-family: "Charter Regular";
+  src: url("../fonts/charter_regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Charter Bold";
+  src: url("../fonts/charter_bold.woff") format("woff");
+  font-weight: bold;
 }
 
 html,
@@ -17,8 +23,7 @@ li {
 
 html,
 body {
-  font-family: "Lato";
-  font-weight: 300;
+  font-display: optional;
   color: #636363;
 }
 
@@ -94,7 +99,8 @@ h3 {
 }
 
 .bold {
-  font-weight: 700;
+  font-family: "Charter Bold", serif;
+  font-weight: bold;
 }
 
 #info {
@@ -103,7 +109,7 @@ h3 {
 
 .details {
   color: #3f3f3f;
-  font-family: "Charter";
+  font-family: "Charter Regular", serif;
   font-size: 12px;
   margin-top: 5px;
 }
@@ -285,7 +291,7 @@ p {
 }
 
 .work-wrapper p {
-  font-family: "Charter", serif;
+  font-family: "Charter Regular", serif;
   color: #3f3f3f;
   font-size: 13px;
   line-height: 1.5;
@@ -617,7 +623,7 @@ p {
   margin: 5px 0 0 0;
   color: black;
   font-weight: 400;
-  font-family: "Charter", serif;
+  font-family: "Charter Regular", serif;
 }
 
 .icon {
@@ -664,7 +670,7 @@ p {
 
 .intro {
   color: #3f3f3f;
-  font-family: "Charter", serif;
+  font-family: "Charter Regular", serif;
   letter-spacing: 0.01rem;
   font-size: 13px;
   line-height: 1.5;
